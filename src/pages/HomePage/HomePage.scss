@@ -1,0 +1,24 @@
+.page__introduction {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  h1 {
+    min-width: 45%;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 0 auto;
+    text-align: center;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+.content__container {
+  width: 100%;
+  background-color: white;
+  height: 10000px;
+
+}

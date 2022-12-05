@@ -1,0 +1,28 @@
+
+:root {
+  // --primary: #fe2c55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Sen', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  background-color: rgba(0, 0, 0, 0.03);
+  color: #333;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

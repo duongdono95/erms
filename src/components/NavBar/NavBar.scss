@@ -1,0 +1,25 @@
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  height: 70px;
+  margin: 0 auto;
+  .flex__grow {
+    flex-grow: 1;
+  }
+  .menu__list {
+    max-width: 50%;
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .nav__icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    color: #333;
+    gap: 30px;
+  }
+}
