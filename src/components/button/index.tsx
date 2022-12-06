@@ -1,4 +1,4 @@
 import Button from "./Button"
-import type { ButtonProps } from "./Button.types";
+import type { ButtonPropsInterface } from "./Button.types";
 
-export { Button, ButtonProps };
+export { Button, ButtonPropsInterface };

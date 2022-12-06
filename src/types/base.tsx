@@ -1,5 +1,5 @@
 // ------------- Button Variants ------------
-type ButtonVariants = 'primary' | 'secondary';
+type ButtonVariants = 'primary' |  'secondary';
 export interface ButtonBaseProps {
   variant: ButtonVariants;
 }
