@@ -1,0 +1,13 @@
+<svg width="228" height="113" viewBox="0 0 228 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M227.532 61.6619L201.633 81.2876L201.633 42.0361L227.532 61.6619Z" fill="#FF6565"/>
+<path d="M138 4V24" stroke="#FF6565" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M92 4V24" stroke="#FF6565" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M63 35H167" stroke="#FF6565" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M66 28.9517C66 25.861 69.0975 22.5 74.0556 22.5H154.944C159.902 22.5 163 25.861 163 28.9517V65H170V28.9517C170 21.05 162.75 15.5 154.944 15.5H74.0556C66.2497 15.5 59 21.05 59 28.9517V65H66V28.9517ZM66 72H59V98.6135C59 106.515 66.2497 112.065 74.0556 112.065H154.944C162.75 112.065 170 106.515 170 98.6135V72H163V98.6135C163 101.704 159.902 105.065 154.944 105.065H74.0556C69.0975 105.065 66 101.704 66 98.6135V72Z" fill="#FF6565"/>
+<path d="M1.00536e-06 75.5L16.5 75.5L25.5 64L33 75.5L40.5 72L49.5 80L57.75 75.5L66 75.5" stroke="#FF6565" stroke-width="7"/>
+<path d="M163 62.5L171.25 62.5L175.375 62.5L179.5 62.5L179.625 62.5L186 53L192 62.5L204.25 62.5L209 62.5L214 62.5" stroke="#FF6565" stroke-width="7"/>
+<rect x="77" y="72" width="10" height="29" rx="5" fill="#FF6565"/>
+<rect x="97" y="51" width="10" height="51" rx="5" fill="#FF6565"/>
+<rect x="117" y="58" width="10" height="44" rx="5" fill="#FF6565"/>
+<rect x="137" y="65" width="10" height="36" rx="5" fill="#FF6565"/>
+</svg>

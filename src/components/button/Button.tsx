@@ -12,7 +12,7 @@ const Button:React.FC<ButtonPropsInterface> = (props) => {
 
   return (
     <button className={buttonVariant[variant]} {...rest}>
-      {children}
+      {children} {variant === "secondary" && <i id='arrow' className="fa-solid fa-right-long"></i> }
     </button>
   )
 }

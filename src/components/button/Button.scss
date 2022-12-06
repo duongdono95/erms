@@ -1,0 +1,42 @@
+
+// ----------------------- Primary BTN ------------------//
+.primary__btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white-color);
+  background-color: var(--signature-color-1);
+  border: 0.3rem solid transparent;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.primary__btn:hover {
+  color: var(--text-color-light);
+  background-color: transparent;
+  border: 0.3rem solid var(--signature-color-1)
+}
+// ----------------------- Secondary BTN ------------------//
+.secondary__btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color-light);
+  padding: 1rem 0;
+  border: none;
+  background-color: transparent;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.secondary__btn:hover {
+  .fa-right-long {
+    position: relative;
+    animation-name: movingForwardBackward;
+    animation-duration: 1s;
+    animation-iteration-count: 10;
+  }
+}
+@keyframes movingForwardBackward {
+  0% { left:0px;}
+  50% {left:1rem;}
+  100% {left:0px;}
+}

@@ -1,6 +1,17 @@
 
 :root {
-  // --primary: #fe2c55;
+  --max-width: 114rem;
+  --signature-color-1: #FF6565;
+  --signature-color-2: #234B59;
+  --text-color-light: rgba(51, 51, 51, 0.8);
+  --text-color-dark : #333;
+  --background-color: rgba(0, 0, 0, 0.03);
+  --white-color : white;
+  --spacing-10 : 1rem;
+  --spacing-15: 1.5rem;
+  --spacing-30: 3rem;
+  --spacing-50: 5rem;
+  --shadow:0.4rem 0.4rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -18,11 +29,16 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizespeed;
-  background-color: rgba(0, 0, 0, 0.03);
-  color: #333;
+  background-color: var(--background-color) ;
+  color: var(--text-color);
 }
 .page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+}
+.spacer {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,27 @@
+.footer__wrapper {
+  width: 100vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+.footer__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-10) 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.8rem;
+}
+.footer__item {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  .footer__icon {
+    color: var(--signature-color-2);
+    font-size: 2.8rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    font-weight: 600
+  }
+}

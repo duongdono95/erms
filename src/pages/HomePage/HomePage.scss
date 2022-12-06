@@ -1,24 +1,68 @@
-.page__introduction {
-  max-width: 1140px;
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.introduction {
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
+  gap: var(--spacing-50);
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-15);
+  }
   h1 {
     min-width: 45%;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0 auto;
     text-align: center;
   }
   p {
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 }
-.content__container {
+.body {
   width: 100%;
-  background-color: white;
-  height: 10000px;
+  background-color: var(--white-color);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .body__container {
+    max-width: 85rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .body__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  .body__item:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    box-shadow: var(--shadow);
+    cursor: pointer;
+  }
+  .content__group {
+    max-width: 45rem;
+    h1 {
+      font-size: 2.8rem;
+      color: rgba(51, 51, 51, 0.85)
+    }
+  }
 
+  .reverse {
+    flex-direction: row-reverse;
+  }
 }
