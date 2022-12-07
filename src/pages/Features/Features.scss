@@ -1,0 +1,41 @@
+.switching__menu {
+  max-width: var(--max-width);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  a {
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    opacity: 50%;
+    padding: 0.5rem 0;
+  }
+  .active {
+    opacity: 100%;
+    border-bottom: 4px solid var(--signature-color-2);
+  }
+}
+.feature-page__content {
+  padding: 30px 0;
+  width: 100%;
+  flex-grow: 1;
+  background-color: White;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  .feature-page__description {
+    max-width: 85rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .summarized__chart {
+    width: 100%;
+    min-height: 25rem;
+    background-color: var(--signature-color-2)
+  }
+}

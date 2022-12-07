@@ -1,13 +1,16 @@
 import React from 'react'
+import { NavLink } from "react-router-dom"
 import './NavBar.scss'
 
 const NavBar = () => {
   const logo = require("./logo.png") as string
   return (
     <div className="nav__container">
-      <div className="nav__item">
-        <img src={logo} alt="Logo" />
-      </div>
+      <NavLink to="/">
+        <div className="nav__item">
+          <img src={logo} alt="Logo" />
+        </div>
+      </NavLink>
       <div className="nav__item flex__grow">
         <ul className="menu__list">
           <li className="menu__item">Nav</li>

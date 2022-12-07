@@ -1,12 +1,7 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-bottom: 30px;
-}
+
 .introduction {
   max-width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto 3rem auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +57,5 @@
     }
   }
 
-  .reverse {
-    flex-direction: row-reverse;
-  }
+
 }

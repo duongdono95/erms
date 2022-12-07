@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomePage.scss'
+import './HomePage.scss';
 import {ReactComponent as GraphicIcon1} from '../../assets/AverageCostOfElectricityForeCast.svg'
 import {ReactComponent as GraphicIcon2} from '../../assets/ScenarioCostOfElectricityForecast.svg'
 import {ReactComponent as GraphicIcon3} from '../../assets/MonthProfileCharting.svg'
@@ -7,11 +7,14 @@ import {ReactComponent as GraphicIcon4} from '../../assets/FinancialYearPosition
 import NavBar from "../../components/NavBar/NavBar";
 import Footer from "../../components/Footer/Footer";
 import { Button } from "../../components/button";
+import { Link, NavLink } from "react-router-dom";
 const HomePage = () => {
   return (
     <div className="page">
       <section className="header">
-        <div><NavBar /></div>
+        <div>
+          <NavBar />
+        </div>
         <div className="introduction">
           <h1 >Welcome to New Zealand Energy Risk Management System</h1>
           <div>
@@ -23,37 +26,45 @@ const HomePage = () => {
       </section>
       <section className="body">
         <div className="body__container">
-          <div className="body__item">
-            <div className="content__group">
-              <h1>Average Cost Of Electricity Forecast</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+          <NavLink className="no__text__decoration" to="/Features/AverageCost">
+            <div className="body__item">
+              <div className="content__group">
+                <h1>Average Cost Of Electricity Forecast</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+              </div>
+              <GraphicIcon1 />
             </div>
-            <GraphicIcon1 />
-          </div>
+          </NavLink>
           <div className="spacer"></div>
-          <div className="body__item reverse">
-            <div className="content__group">
-              <h1>Scenario Cost of Electricity Forecast</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+          <NavLink className="no__text__decoration" to="/Features/ScenarioCost">
+            <div className="body__item reverse">
+              <div className="content__group">
+                <h1>Scenario Cost of Electricity Forecast</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+              </div>
+              <GraphicIcon2 />
             </div>
-            <GraphicIcon2 />
-          </div>
+          </NavLink>
           <div className="spacer"></div>
-          <div className="body__item">
-            <div className="content__group">
-              <h1>Month Profile Charting</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+          <NavLink className="no__text__decoration" to="/Features/MonthProfile">
+            <div className="body__item">
+              <div className="content__group">
+                <h1>Month Profile Charting</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+              </div>
+              <GraphicIcon3 />
             </div>
-            <GraphicIcon3 />
-          </div>
+          </NavLink>
           <div className="spacer"></div>
-          <div className="body__item reverse">
-            <div className="content__group">
-              <h1>Financial Year Position Charting</h1>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+          <NavLink className="no__text__decoration" to="/Features/FinancialYear">
+            <div className="body__item reverse">
+              <div className="content__group">
+                <h1>Financial Year Position Charting</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
+              </div>
+              <GraphicIcon4 />
             </div>
-            <GraphicIcon4 />
-          </div>
+          </NavLink>
         </div>
       </section>
       <section>
