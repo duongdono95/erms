@@ -1,0 +1,71 @@
+.toolbar {
+  width: var(--max-width);
+  display: flex;
+  justify-content: space-between;
+  .toolbar__group {
+    display: flex;
+    align-items: center;
+  }
+  .switch__option {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 10px;
+  }
+  #site__selector {
+    font-size: 22px;
+    font-weight: 600;
+    border: none;
+  }
+  .isActive {
+    background-color: var(--signature-color-2);
+    color: white;
+  }
+  .dropdown__container {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown__btn {
+    font-weight: 600px;
+    padding: 5px 15px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .site__selector {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .dropdown__options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: var(--shadow);
+    z-index: 1;
+    text-align: center;
+  }
+  .dropdown__options option {
+    padding: 5px 15px;
+
+  }
+  .dropdown__options option:hover {
+    background-color: #DADADA;
+  }
+  .dropdown__container:hover .dropdown__options {
+    display: block !important;
+  }
+  .year__selector {
+    font-size: 1.6rem;
+    font-weight: 600px;
+    padding: 5px 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  .year__selector_options {
+    padding: 5px 15px;
+    font-size: 1.6rem;
+    font-weight: 500
+  }
+}

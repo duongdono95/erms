@@ -14,9 +14,9 @@ const Features = () => {
       </section>
       <section className="body">
         <Routes>
-          {featureRoutes.map((route) => {
+          {featureRoutes.map((route, index) => {
             return (
-              <Route path={route.path} element={<route.component />}/>
+              <Route key={index} path={route.path} element={<route.component />}/>
             )
           })}
         </Routes>

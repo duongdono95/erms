@@ -19,7 +19,7 @@
     border-bottom: 4px solid var(--signature-color-2);
   }
 }
-.feature-page__content {
+.features__container {
   padding: 30px 0;
   width: 100%;
   flex-grow: 1;
@@ -27,11 +27,17 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  .feature-page__description {
+  .features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .features__description {
     max-width: 85rem;
-    margin: 0 auto;
     text-align: center;
     font-size: 1.8rem;
+    opacity: 0.8;
+    color: var(--text-color)
   }
   .summarized__chart {
     width: 100%;
