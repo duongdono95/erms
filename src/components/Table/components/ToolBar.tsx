@@ -30,9 +30,7 @@ const ToolBar = () => {
             <option value="2018">2018</option>
           </div>
         </div>
-        <div className="toolbar__item">
           <i className="fa-solid fa-file-arrow-down"></i>
-        </div>
       </div>
     </div>
   )
