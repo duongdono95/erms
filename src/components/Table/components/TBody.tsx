@@ -6,6 +6,7 @@ const TBody = () => {
   const [processedData, setProcessedData] = useState<any>([])
   const convertedRawData = Object.values(RawData)
   const rowTitleArray = Object.keys(RawData)
+
   useEffect(() => {
     const dataProcessor = () => {
       const result = convertedRawData.map(item => Object.entries(item))
@@ -20,27 +21,25 @@ const TBody = () => {
     <>
       {
         processedData.map((tBodys:any, tBodyIndex:number) => {
-          console.log(tBodys)
           return (
-            <div className="tbody">
-              {tBodys.map((rows:any,index:number) => {
+            <div key={tBodyIndex} className="tbody">
+              {tBodys.reverse().map((rows:any,index:number) => {
                 return (
                   <div className="tr" key={index}>
                     {
                       index === 0 ?
-                      (<div className="td row__title">{rowTitleArray[tBodyIndex]}</div>) :
+                      (<div className="td "><p className="row__title">{rowTitleArray[tBodyIndex]}</p></div>) :
                       (<div className="td"></div>)
                     }
-                    <div className="td dark__bg">{rows[0]}</div>
+                    <div className="td dark__bg"><p>{rows[0]}</p></div>
                     {rows[1].map((data:any, dataIndex:number) => {
                         return (
                           <div className="td" key={dataIndex}>
-                            {Math.round((data + Number.EPSILON)*100)/100
-                            }
+                            <p>{Math.round((data + Number.EPSILON)*100)/100}</p>
                           </div>
                         )
                       })}
-                    <div className="td">{rows[1].reduce((a:number , b:number) => Math.round(((a+b) + Number.EPSILON)*100)/100)}</div>
+                    <div className="td"><p>{rows[1].reduce((a:number , b:number) => Math.round(((a+b) + Number.EPSILON)*100)/100)}</p></div>
                     {
                       index === 0 ?
                       (<div className="td expand-btn"><i className="fa-solid fa-chevron-down"></i>
