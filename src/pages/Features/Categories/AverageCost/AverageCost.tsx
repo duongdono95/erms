@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../Features.scss'
-import COEF from "../../../../components/Table/COEF"
+import COEF from "../../../../components/Table/COEF/COEF"
 
 const AverageCost = () => {
   return (

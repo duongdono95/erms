@@ -1,25 +1,31 @@
 import React from 'react'
-import './COEF.scss'
-import Data from "../../data/COEF/CostOfElectricityForecast.json"
-import ToolBar from "./components/ToolBar"
+import '../Table.scss'
+import Data from "../../../data/COEF/CostOfElectricityForecast.json"
+import ToolBar from "../components/ToolBar"
 import TableRow from "./TableRow"
+import THead from "../components/THead"
 
 const COEF = () => {
+  console.log(Data)
   const convertedData = Object.entries(Data)
   const titleArray = convertedData.shift();
   return (
     <div className="coef__container">
       <ToolBar />
-      <div className="table__container">
+      <div className="table">
+        <THead />
+
+      </div>
+      {/* <div className="table__container">
         <div className="table">
-            <div className="tr table__header">
+            <div className="tr table__title">
               <div className="td">
                 <p>{titleArray && titleArray[0]}</p>
               </div>
               <div className="td"></div>
               {titleArray && titleArray[1].map((title, index) => {
                 return (
-                  <div className="td">{title}</div>
+                  <div key={index} className="td">{title}</div>
                 )
               })}
             </div>
@@ -71,7 +77,7 @@ const COEF = () => {
             )
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
