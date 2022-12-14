@@ -13,6 +13,7 @@
   border: 1px solid var(--signature-color-2);
   text-align: center;
   border-collapse: collapse;
+
   .thead {
     display: table-header-group;
     background-color: #234b592d;
@@ -20,6 +21,7 @@
   .tbody {
     display: table-row-group;
     border: 1px solid #234B59;
+
   }
   .col__title {
     background-color: #234B59;
@@ -40,9 +42,7 @@
   .tr:hover {
     backdrop-filter: brightness(90%);
   }
-  .dark__bg {
-    backdrop-filter: brightness(90%);
-  }
+
  //--------------------- td -------------------------------
  .th {
    display: table-cell;
@@ -75,10 +75,14 @@
   .negative-value {
     color: red;
   }
-  .fa-chevron-down {
+  .fa-chevron-down, .fa-chevron-up {
+    transition: 0.3s ease-in-out;
     cursor: pointer;
   }
 }
 .hidden {
   display: none;
+}
+.dark__bg {
+  backdrop-filter: brightness(90%);
 }
