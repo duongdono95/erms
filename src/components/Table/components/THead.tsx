@@ -1,5 +1,6 @@
 import React from 'react'
 import rawData from "../../../data/COEF/CostOfElectricityForecast.json"
+import mathRound from "../../../hook/mathRound";
 const GeneralDataRows = () => {
   const convertedRawData = Object.entries(rawData)
   const titleArray = convertedRawData[0];
@@ -24,7 +25,7 @@ const GeneralDataRows = () => {
             <div className="td row__title">{item[0]}</div>
             <div className="td"></div>
             {item[1].map((data, index) => {
-              return <div key={index} className="td">{typeof data === 'number' && Math.round((data + Number.EPSILON)*100)/100}</div>
+              return <div key={index} className="td">{typeof data === 'number' && mathRound(data)}</div>
             })}
             <div className="td"></div>
           </div>
